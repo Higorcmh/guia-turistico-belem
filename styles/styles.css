@@ -57,6 +57,11 @@ body {
     text-decoration: none;
 }
 
+.navegacao__item:hover .navegacao__link {
+    color: #95b634;
+    font-weight: bold;
+}
+
 .container__principal {
     padding: 1.5em;
 }
@@ -170,6 +175,11 @@ p.col2__texto {
     font-size: 16px;
     color: black;
     /* text-decoration: none; */
+}
+
+.descricao__links:hover {
+    color: purple;
+    font-weight: bold;
 }
 
 .descricao__lista {
