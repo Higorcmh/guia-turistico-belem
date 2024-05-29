@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0em 0;
+}
+
+/* Estilos gerais */
+:root {
+    --branco-primario: #ffffff;
+    --background-header: #294b29;
+    --cor-background: #dbe7c9;
+    --background-footer: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0em 0;
+    background-color: var(--cor-background);
+    background-image: url('../assets/estacaodasdocas.jpg');
+    background-repeat: repeat;
+    /* Controla como a imagem se repete */
+    background-size: cover;
+    /* Controla o tamanho da imagem */
+    background-position: center;
+    /* Controla a posição da imagem */
+    background-attachment: fixed;
+}
+
+.cabecalho {
+    background: linear-gradient(black, 60%, transparent);
+    color: var(--branco-primario);
+    padding: 1em;
+    
+}
+
+.cabecalho__titulo {
+    font-size: 40px;
+    text-align: center;
+}
+
+.navegacao__lista {
+    list-style-type: none;
+    margin: 0em 0em 0em 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+.navegacao__item {
+    display: inline;
+    margin-right: 1.5em;
+}
+
+.navegacao__link {
+    color: var(--branco-primario);
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container__principal {
+    padding: 1.5em;
+}
+
+.rodape {
+    background-color: var(--background-footer);
+    color: var(--branco-primario);
+    padding: 1.5em;
+    text-align: center;
+}
+
+.container {
+    /* Defini a caixa branca*/
+    width: 70%;
+    /* Tamanho da largura q a caixa ocupa na tela*/
+    margin: 1em auto;
+    /* Centraliza a caixa na tela horizontalmente */
+    padding: 20px;
+    /* Espaçamento interno da caixa */
+    background-color: #fff;
+    /* Cor branca para a caixa */
+    border-radius: 10px;
+    /* deixa o canto redondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* uma sombra para dar profundidade uma coisa assim puramente estetica */
+}
+
+.col1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: justify;
+    padding: 1em 0;
+    /* Espaçamento entre as colunas */
+}
+
+p.col1__texto {
+    padding: 1em 2em 1em 0em;
+}
+
+.col1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+    /* Espaçamento entre imagem e texto */
+
+}
+
+.col1 h2 {
+    font-size: 32px;
+    /* Tamanho da fonte do título */
+    margin-bottom: 5px;
+    /* Espaçamento entre título e parágrafo */
+}
+
+.col1 p {
+    font-size: 18px;
+}
+
+
+/*Coluna dupla*/
+.col2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 0fr;
+    align-items: center;
+    text-align: justify;
+    /* Quatro colunas com a mesma largura (fr=frame isso aqui e essa informação eu tirei das vozes da minha cabeça mas deu certo) */
+    /*(fr=frame isso aqui e essa informação eu tirei das vozes da minha cabeça mas deu certo)*/
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: space-evenly;
+    /* Espaçamento entre as colunas */
+    
+}
+
+p.col2__texto {
+    padding: 1em 0;
+}
+
+.col2>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Organiza em coluna */
+    align-items: flex-start;
+    /* Alinha horizontalmente à esquerda */
+    padding: 0.5em 0;
+}
+
+.col2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+    /* Espaçamento entre imagem e texto */
+}
+
+.col2 h2 {
+    font-size: 20px;
+    /* Tamanho da fonte do título */
+    margin-bottom: 5px;
+    /* Espaçamento entre título e parágrafo */
+}
+
+.col2 p {
+    font-size: 18px;
+}
+
+.descricao__links {
+    font-size: 16px;
+    color: black;
+    /* text-decoration: none; */
+}
+
+.descricao__lista {
+    padding: 0;
+    list-style-type: none;
+}
