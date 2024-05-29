@@ -11,38 +11,123 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--cor-background);
+    background-image: url('../assets/bg.jpg');
+    background-repeat: repeat;
+    /* Controla como a imagem se repete */
+    background-size: cover;
+    /* Controla o tamanho da imagem */
+    background-position: center;
+    /* Controla a posição da imagem */
+    background-attachment: fixed;
 }
 
-header {
+.cabecalho {
     background-color: var(--background-header);
     color: var(--branco-primario);
     padding: 1.5em;
     text-align: center;
 }
 
-nav ul {
+.navegacao__lista {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+.navegacao__item {
     display: inline;
     margin-right: 1.5em;
 }
 
-nav ul li a {
+.navegacao__link {
     color: var(--branco-primario);
     text-decoration: none;
 }
 
-section {
+.container__principal {
     padding: 1.5em;
 }
 
-footer {
+.rodape {
     background-color: var(--background-footer);
     color: var(--branco-primario);
     padding: 1.5em;
     text-align: center;
+}
+
+.container {
+    /* Defini a caixa branca*/
+    width: 70%;
+    /* Tamanho da largura q a caixa ocupa na tela*/
+    margin: 1em auto;
+    /* Centraliza a caixa na tela horizontalmente */
+    padding: 20px;
+    /* Espaçamento interno da caixa */
+    background-color: #fff;
+    /* Cor branca para a caixa */
+    border-radius: 10px;
+    /* deixa o canto redondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* uma sombra para dar profundidade uma coisa assim puramente estetica */
+}
+
+.col1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* Espaçamento entre as colunas */
+}
+
+.col1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+    /* Espaçamento entre imagem e texto */
+
+}
+
+.col1 h2 {
+    font-size: 30px;
+    /* Tamanho da fonte do título */
+    margin-bottom: 5px;
+    /* Espaçamento entre título e parágrafo */
+}
+
+.col1 p {
+    font-size: 18px;
+}
+
+
+/*Coluna dupla*/
+.col2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* Quatro colunas com a mesma largura (fr=frame isso aqui e essa informação eu tirei das vozes da minha cabeça mas deu certo) */
+    /*(fr=frame isso aqui e essa informação eu tirei das vozes da minha cabeça mas deu certo)*/
+    gap: 20px;
+    /* Espaçamento entre as colunas */
+}
+
+.col2>div {
+    display: flex;
+    flex-direction: column;
+    /* Organiza em coluna */
+    align-items: flex-start;
+    /* Alinha horizontalmente à esquerda */
+}
+
+.col2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+    /* Espaçamento entre imagem e texto */
+}
+
+.col2 h2 {
+    font-size: 18px;
+    /* Tamanho da fonte do título */
+    margin-bottom: 5px;
+    /* Espaçamento entre título e parágrafo */
 }
