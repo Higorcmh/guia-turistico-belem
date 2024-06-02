@@ -48,3 +48,100 @@ body {
     font-weight: 700;
     text-decoration: none;
 }
+
+.container {
+    /* Defini a caixa branca*/
+    width: 70%;
+    /* Tamanho da largura q a caixa ocupa na tela*/
+    margin: 1em auto;
+    /* Centraliza a caixa na tela horizontalmente */
+    padding: 20px;
+    /* Espaçamento interno da caixa */
+    background-color: #fff;
+    /* Cor branca para a caixa */
+    border-radius: 10px;
+    /* deixa o canto redondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* uma sombra para dar profundidade uma coisa assim puramente estetica */
+}
+
+.col1 {
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    gap: 20px;
+    text-align: justify;
+    padding: 1em 0;
+    /* Espaçamento entre as colunas */
+}
+
+p.col1__texto {
+    padding: 1em 2em 1em 0em;
+}
+
+.col1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+    /* Espaçamento entre imagem e texto */
+
+}
+
+.col1 h2 {
+    font-size: 32px;
+    /* Tamanho da fonte do título */
+    margin-bottom: 5px;
+    /* Espaçamento entre título e parágrafo */
+}
+
+.col1 p {
+    font-size: 18px;
+}
+
+.rodape {
+    background-color: var(--background-footer);
+    color: var(--branco-primario);
+    padding: 1.5em;
+    text-align: center;
+}
+
+/* carrossel titulo */
+.carrossel__titulo {
+    color: var(--laranja);
+    background-color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 1em 0 1em 0;
+}
+
+/* carrossel imagens */
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+
+.swiper {
+    /* Defini a caixa branca*/
+    width: 70%;
+    /* Tamanho da largura q a caixa ocupa na tela*/
+    margin: 1em auto;
+    /* Centraliza a caixa na tela horizontalmente */
+    padding: 20px;
+    /* Espaçamento interno da caixa */
+    background-color: #fff;
+    /* Cor branca para a caixa */
+    border-radius: 10px;
+    /* deixa o canto redondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* uma sombra para dar profundidade uma coisa assim puramente estetica */
+}

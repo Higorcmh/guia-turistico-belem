@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Belém</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon3.ico">
 </head>
+
 <body>
     <header class="cabecalho">
         <!-- <div> 
@@ -26,17 +29,75 @@
         </nav>
     </header>
 
-    <section class="containter principal">
-        <h2 class="descricao__titulo">Sobre o Turísmo de Belém</h2>
-        <p class="descricao__texto">Cultura e turismo de Belém são diversificadas as opções culturais e turísticas da capital do Estado do pará, influenciadas por indígenas e imigrantes estrangeiros, que manifestam-se através das manifestações religiosas, da gastronomia, do folclore, danças, músicas, teatros, museus, etc. A capital paraense desponta como grande roteiro turístico do Brasil, gerando uma excelente oportunidade para investimentos turísticos.</p>
-    </section>
+    <main>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Pontos Turísticos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/estacao1.jpeg"
+                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="assets/belem-home.png"
+                            alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="assets/bg.jpg"
+                            alt="Livro sobre javascript assertivo da alura books"></div>
+                    <div class="swiper-slide"><img src="assets/gasometro1.jpg" alt="Livro Guia front-end"></div>
+                    <div class="swiper-slide"><img src="assets/bosque.jpeg" alt="Livro sobre Portugol"></div>
+                    <div class="swiper-slide"><img src="assets/gasometro2.jpg" alt="Livro sobre Acessibilidade"></div>
+                    ...
+                </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+        <div class="container">
+            <div class="content">
+                <section class="col1">
+                    <div class="col1__container-conteudo">
+                        <h2 class="col1__titulo">Sobre o Turísmo de Belém</h2>
+                        <p class="col1__texto">Cultura e turismo de Belém são diversificadas as opções culturais e
+                            turísticas da capital do Estado do pará, influenciadas por indígenas e imigrantes
+                            estrangeiros, que manifestam-se através das manifestações religiosas, da gastronomia, do
+                            folclore, danças, músicas, teatros, museus, etc. A capital paraense desponta como grande
+                            roteiro turístico do Brasil, gerando uma excelente oportunidade para investimentos
+                            turísticos.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
 
     <footer class="rodape">
-        <p>Entre em contato conosco para saber mais sobre a gastronomia amazônica!</p>
+        <p class="descricao__rodape">Entre em contato conosco para saber mais sobre a gastronomia amazônica!</p>
         <address>
             Email: contato@gastronomiaamazonica.com<br>
             Telefone: (XX) XXXX-XXXX
         </address>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 20,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
+
 </html>
