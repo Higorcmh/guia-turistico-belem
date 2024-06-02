@@ -1,73 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gastronomia Amazônica</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>Parques</title>
+    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon3.ico">
 </head>
+
 <body>
-    <header>
+    <header class="cabecalho">
         <!-- <div> 
             <img src="assets/imagens Belem/belem-home.png" width="300" height="200" alt="belem-home">
             <img src="assets/imagens Belem/belem-home2.png" width="300" height="200" alt="belem-home2">
         </div>-->
-        <h1>Guia Turístico de Belém</h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./museus.html">Museus</a></li>
-                <li><a href="./parques.html">Parques</a></li>
-                <li><a href="./pracas.html">Praças</a></li>
-                <li><a href="./teatros.html">Teatros</a></li>
-                <li><a href="./dicas.html">Dicas</a></li>
+        <h1 class="cabecalho__titulo">Guia Turístico de Belém</h1>
+        <nav class="navegacao">
+            <ul class="navegacao__lista">
+                <li class="navegacao__item"><a href="./index.html" class="navegacao__link">Home</a></li>
+                <li class="navegacao__item"><a href="./museus.html" class="navegacao__link">Museus</a></li>
+                <li class="navegacao__item"><a href="./parques.html" class="navegacao__link">Parques</a></li>
+                <li class="navegacao__item"><a href="./pracas.html" class="navegacao__link">Praças</a></li>
+                <li class="navegacao__item"><a href="./teatros.html" class="navegacao__link">Teatros</a></li>
+                <!-- <li class="navegacao__item"><a href="./dicas.html" class="navegacao__link">Dicas</a></li> -->
             </ul>
         </nav>
     </header>
 
-    <section class="pontosTuristicos">
-        <h3>Parque Estadual do Utinga</h3>
-        <img src="assets/utinga.webp" width="300" height="200" alt="utinga">
-        <img src="assets/utinga2.jpeg" width="300" height="200" alt="utinga2">
-        <p>O Parque Estadual do Utinga (PEUt) é uma Unidade de Conservação Estadual criada com o objetivo de preservar ecossistemas naturais de grande relevância ecológica e beleza cênica, estimular a realização de pesquisas científicas e, além disso, incentivar o desenvolvimento de atividades de educação ambiental, incluindo o turismo ecológico.</p>
-        <h4>Endereço:</h4>
-        <p>Av. João Paulo II, S/N - Curió-Utinga, Belém</p>
-        <h4>Horário de Funcionamento:</h4>
-        <p>Segunda, Quarta, Quinta, Sexta, Sabádo, Domingo e Feriados
-        <p>6h às 17h</p>
-        <p>( Fechado às terça-feiras para manutanção semanal )</p>
-        <h4>Contatos:</h4>
-        <a href="https://www.parquedoutinga.com.br/">https://www.parquedoutinga.com.br/</a>
-        <p>(91) 3344-0153</p>
-        <p>(91) 3344-0153</p>
-        <p>comercial@para2000.com.br</p>
-    </section>
+    <main>
+        <div class="container">
+            <div class="content">
+                <section class="col1">
+                    <div class="col1__container-img"><img src="./assets/utinga.webp" alt="Descrição da imagem"
+                            class="col1__img"></div>
+                    <div class="col1__container-conteudo">
+                        <h2 class="col1__titulo">Parque Estadual do Utinga</h2>
+                        <p class="col1__texto">O Parque Estadual do Utinga (PEUt) é uma Unidade de Conservação Estadual
+                            criada com o objetivo de preservar ecossistemas naturais de grande relevância ecológica e
+                            beleza cênica, estimular a realização de pesquisas científicas e, além disso, incentivar o
+                            desenvolvimento de atividades de educação ambiental, incluindo o turismo ecológico.</p>
+                    </div>
+                </section>
 
-    <section class="pontosTuristicos">
-        <h3>Parque Urbano Porto Futuro</h3>
-        <img src="./assets/portofuturo1.jpg" alt="porto futuro 01" width="300" height="200">
-        <img src="./assets/portofuturo2.jpg" alt="porto futuro 02" width="300" height="200">
-        <p>Inaugurado em 2020, o Parque Urbano Belém Porto Futuro está situado na área portuária da cidade, próximo às margens da Baía do Guajará. Toda a infraestrutura do projeto foi pensada para a sustentabilidade e acessibilidade, além de criar um polo de desenvolvimento na região, impulsionando atividades turísticas e o comércio local. Possui uma arquitetura moderna e inovadora, com espaço de exposições para artesanato e shows. </p>
-        <h4>Funcionamento:</h4>
-        <p>Todos os dias, de 06h às 22h.</p>
-        <h4>Entrada:</h4>
-        <p>Gratuita.</p>
-        <h4>Serviços:</h4>
-        <p>No local você necontra quiosques com opções de comidas e bebidas típicas, áreas para lazer infantil, para pet’s e centro de convenções.</p>
-        <h4>Endereço:</h4>
-        <p>R. Belém, S/N - Reduto, Belém - PA</p>
-        <h4>Contatos:</h4>
-        <p>(091) 4009-8453</p>
-        <p>gsg.secult@gmail.com</p>
-    </section>
+                <section class="col2">
+
+                    <div class="col2__container-conteudo">
+                        <h2 class="col2__subtitulo">Entrada:</h2>
+                        <p class="col2__texto">Gratuita.</p>
+                        <h2 class="col2__subtitulo">Funcionamento:</h2>
+                        <p class="col2__texto">Segunda, Quarta, Quinta, Sexta, Sabádo, Domingo e Feriados 6h às 17h
+                            (Fechado às terça-feiras para manutanção semanal)</p>
+                    </div>
+
+                    <div class="col2__container-conteudo">
+                        <h2 class="col2__titulo">Endereço:</h2>
+                        <p class="col2__texto">Av. João Paulo II, S/N - Curió-Utinga, Belém – Pará</p>
+                        <h2 class="col2__titulo">Contatos</h2>
+                        <p class="col2__texto">(91) 3344-0153
+                            <br>
+                            comercial@para2000.com.br
+                        </p>
+                    </div>
+                    <div class="col2__container-img"><img src="./assets/utinga2.jpeg" alt="Descrição da imagem"
+                            class="col2__img"></div>
+                </section>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <section class="col1">
+                    <div class="col1__container-img"><img src="./assets/portofuturo1.jpg" alt="Descrição da imagem"
+                            class="col1__img"></div>
+                    <div class="col1__container-conteudo">
+                        <h2 class="col1__titulo">Parque Urbano Porto Futuro</h2>
+                        <p class="col1__texto">Inaugurado em 2020, o Parque Urbano Belém Porto Futuro está situado na
+                            área portuária da cidade, próximo às margens da Baía do Guajará. Toda a infraestrutura do
+                            projeto foi pensada para a sustentabilidade e acessibilidade, além de criar um polo de
+                            desenvolvimento na região, impulsionando atividades turísticas e o comércio local. Possui
+                            uma arquitetura moderna e inovadora, com espaço de exposições para artesanato e shows.</p>
+                    </div>
+                </section>
+
+                <section class="col2">
+
+                    <div class="col2__container-conteudo">
+                        <h2 class="col2__subtitulo">Serviços:</h2>
+                        <p class="col2__texto">No local você necontra quiosques com opções de comidas e bebidas típicas,
+                            áreas para lazer infantil, para pet’s e centro de convenções.
+                        </p>
+
+                        <h2 class="col2__subtitulo">Entrada:</h2>
+                        <p class="col2__texto">Gratuita.</p>
+                        <h2 class="col2__subtitulo">Funcionamento:</h2>
+                        <p class="col2__texto">Todos os dias, de 06h às 22h.</p>
+                    </div>
+
+                    <div class="col2__container-conteudo">
+                        <h2 class="col2__titulo">Endereço:</h2>
+                        <p class="col2__texto">R. Belém, S/N - Reduto, Belém - PA</p>
+                        <h2 class="col2__titulo">Contatos</h2>
+                        <p class="col2__texto">(091) 4009-8453<br />gsg.secult@gmail.com</p>
+                        <br>
+                    </div>
+                    <div class="col2__container-img"><img src="./assets/portofuturo2.jpg" alt="Descrição da imagem"
+                            class="col2__img"></div>
+                </section>
+            </div>
+        </div>
+    </main>
 
     <footer class="rodape">
-        <p>Entre em contato conosco para saber mais sobre a gastronomia amazônica!</p>
+        <p class="descricao__rodape">Entre em contato conosco para saber mais sobre a gastronomia amazônica!</p>
         <address>
             Email: contato@gastronomiaamazonica.com<br>
             Telefone: (XX) XXXX-XXXX
         </address>
     </footer>
 </body>
+
 </html>
